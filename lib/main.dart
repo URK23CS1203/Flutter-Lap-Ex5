@@ -15,7 +15,15 @@ class NavigationApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Navigation App',
+
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
+        useMaterial3: true,
+      ),
+
       initialRoute: '/',
+
       routes: {
         '/': (context) => const HomePage(),
         '/profile': (context) => const ProfilePage(),
